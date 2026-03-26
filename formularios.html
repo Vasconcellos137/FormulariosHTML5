@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <h1>Tipos de Inputs HTML5</h1>
+        <fieldset>
+            <legend>Indentificação de Acesso</legend>
+                <div class ="row">
+                    <div class ="Campo">
+                        <label for="Nome:">Nome (name)</label>
+                        <input type="text" name="nome" id="" placeholder="Nome Completo" required>
+                    </div>
+                    <div class ="Campo">
+                        <label for="senha">Senha (password)</label>
+                        <input type="password" name="senha" id="" placeholder="Senha" required>
+                    </div>
+                    <div class="Campo">
+                        <label for="email">E-mail (email)</label>
+                        <input type="email" name="email" id="" placeholder="Email" required>
+                    </div>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Quantitativos</legend>
+                <div class="row">
+                    <div class="Campo">
+                        <label for="idade">Idade (number)</label>
+                        <input type="number" name="idade" id="" min="18" max="100" value="18">
+                    </div>
+                    <div class="Campo">
+                        <label for="volume">Volume (range)</label>
+                        <input type="range" name="volume" id="" min="0" max="100">
+                    </div>
+                    <div class="Campo">
+                        <label for="cor">Tema de Cor (color)</label>
+                        <input type="color" name="cor_tema" id="" value="#3498db">
+                    </div>
+                </div>
+        </fieldset>
+        <!--Tarefa:
+             Agendamentos - data, hora, semana
+             Preferencias - checkbox, radio
+             Enviar arquivos - file, url, textarea-->
+        <fieldset>
+            <legend>Agendamentos</legend>
+                <div class="row">
+                    <div class="Campo">
+                        <label for="data">Data (data)</label>
+                        <input type="date" name="data" id="" >
+                    </div>
+                    <div class="Campo">
+                        <label for="hora">Hora (hora)</label>
+                        <input type="time" name="hora" id="" >
+                    </div>
+                    <div class="Campo">
+                        <label for="semana">Semana (semana)</label>
+                        <input type="week" name="semana" id="" >
+                    </div>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>Preferências</legend>
+                <div class="row">
+                    <div class="Campo">
+                        <label for="checkbox">Checkbox (check)</label>
+                        <input type="checkbox" name="check" id="" >
+                    </div>
+                    <div class="Campo">
+                        <label for="radio">Radio (radio)</label>
+                        <input type="radio" name="radio" id="" >
+                    </div>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>Enviar Arquivos</legend>
+                <div class="row">
+                    <div class="Campo">
+                        <label for="file">Arquivo (file)</label>
+                        <input type="file" name="file" id="" >
+                    </div>
+                    <div class="Campo">
+                        <label for="url">URL (url)</label>
+                        <input type="url" name="url" id="" >
+                    </div>
+                    <div class="Campo"> 
+                        <label for="textarea">Textaria (text)</label>
+                        <!-- <input type="textarea" name="textarea" id="" > -->
+                        <textarea name="" id="" ></textarea> 
+                        <!-- cols="10" rows="10" - P definir colunas e linhas -->
+                    </div>
+                </div>
+        </fieldset>
+    </form>
+</body>
+</html>
